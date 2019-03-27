@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <title>中学信息收集平台</title>
+  </head>
+  <script>
+    function fn() {
+        let winW = document.documentElement.clientWidth;
+        if (winW>=750){
+            document.documentElement.style.fontSize = "100px";
+            return;
+        }
+        document.documentElement.style.fontSize = winW / 750 * 100 + "px";
+    }
+    fn();
+    window.addEventListener("resize",fn,false);//resize指窗口发生改变（横屏变竖屏）
+  </script>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
